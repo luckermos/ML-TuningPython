@@ -3,11 +3,11 @@
 
 ## Descrição
 
-O projeto contém *scripts* com exemplos de aplicação de algoritmos de *machine learning* tanto para regressão quanto para classificação com a implementação de código para *tuning* dos hiperparâmetros a partir do `RandomizedSearchCV()` e seleção do melhor subconjunto de variáveis explicativas a partir do `RFECV()` quando aplicável. Foi criada uma função específica para obter medidas de avaliação a fim de comparar o desempenho dos algoritmos.
+O projeto contém *scripts* com exemplos de aplicação de algoritmos de *machine learning* tanto para regressão quanto para classificação com a implementação de código para *tuning* dos hiperparâmetros a partir do `RandomizedSearchCV()` e seleção do melhor subconjunto de variáveis explicativas a partir do `RFECV()`, quando aplicável, de modo a maximizar uma métrica de avaliação escolhida. Foi criada uma função específica para obter medidas de avaliação a fim de comparar o desempenho dos algoritmos. Foram utilizadas as funções dos pacotes `pandas` e `numpy` para manipulação dos dados, `matplotlib` e `seaborn` para visualização e `scikit-learn` para a modelagem.
 
 ## Classificação
 
-Os modelos para classificação podem ser encontrados no arquivo `ML_Classification_Tuning_FeatureSelect.ipynb` e contém os algoritmos:
+Os modelos para classificação maximizam a Acurácia Balanceada e podem ser encontrados no arquivo `ML_Classification_Tuning_FeatureSelect.ipynb`. Contém os algoritmos:
 
 - *KNN*: `KNeighborsClassifier()`
 - *Naive Bayes*: `GaussianNB()`
@@ -19,7 +19,7 @@ Os modelos para classificação podem ser encontrados no arquivo `ML_Classificat
 
 ## Regressão
 
-Os modelos para Regressão podem ser encontrados no arquivo `ML_Regression_Tuning_FeatureSelect.ipynb` e contém os algoritmos:
+Os modelos para Regressão minimizam o Erro Quadrático Médio (EQM/MSE) e podem ser encontrados no arquivo `ML_Regression_Tuning_FeatureSelect.ipynb`. Contém os algoritmos:
 
 - *Linear Regression*: `LinearRegression()`
 - *Decision Tree*: `DecisionTreeRegressor()`
