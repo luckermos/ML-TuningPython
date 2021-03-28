@@ -1,3 +1,4 @@
+![](https://github.com/luckermos/ML-TuningPython/blob/main/machine-learning.jpg?raw=true)
 # *Scripts* de *Machine Learning* em Python com *Tuning* de Hiperparâmetros e *Feature Selection* para Classificação e Regressão
 
 ## Descrição
